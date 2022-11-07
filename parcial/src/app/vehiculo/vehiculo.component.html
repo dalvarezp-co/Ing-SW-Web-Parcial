@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <h4>TuSegundazo.com</h4>
+    <tr>
+      <hr class="style1">
+      <img src="../../assets/image1.png" alt="Responsive image">
+      <hr class="style1">
+    </tr>
+      <table class="table">
+      <thead bgcolor="333A40">
+        <tr>
+          <th class="h5">#</th>
+          <th class="h5">Marca</th>
+          <th class="h5">Línea</th>
+          <th class="h5">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of vehiculos">
+          <td>
+            <dd style="font-weight: bold">{{v.id}}</dd>
+          </td>
+          <td>
+            <dd>{{v.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{v.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{v.modelo}}</dd>
+          </td>
+       </tr>
+      </tbody>
+    </table>
+    <p>Total Renault: {{count1}}</p>
+    <p>Total Chevrolet: {{count2}}</p>
+    <p>Total Nissan: {{count3}}</p>
+    <tr>
+    </tr>
+  </div>
+</div>
